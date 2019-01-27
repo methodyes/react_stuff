@@ -1,50 +1,52 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
+class Usermain extends Component {
+  constructor(props) {
+    super(props);
 
- class Usermain  extends Component {
-     constructor(props) {
-       super(props)
-     
-       this.state = {
+    this.state = {
+      Users: [
+        { name: "Metho", age: 30 },
+        { name: "Huzni", age: 26 },
+        { name: "Arshad", age: 29 }
+      ]
+    };
+  }
+  reduceage() {
+    const newModifiedUsers = this.state.Users.map(userItem => {
+      return this.increaseAgeBy10(userItem);
+    });
 
-        Users :[{ name:"Metho" , age:30} , ]
-        //    Users : [
-        //    { name:"Metho" , age:30} , 
-        //    { name:"Huzni" , age:26} , 
-        //    { name:"Arshad" , age:29} , 
+    this.setState({
+      Users: newModifiedUsers
+    });
+  }
 
-        //    ]
-          
-       }
-     }
-     reduceage () {
-         this.setState ({
-             Users : this.state.Users.age-5
+  increaseAgeBy10(user) {
+    user.age = user.age + 10;
+    return user;
+  }
 
-             
-            // Users : [
-            //     { name:"Metho" , age:20} , 
-            //     { name:"Huzni" , age:16} , 
-            //     { name:"Arshad" , age:19} , 
-     
-            //     ]
-         })
-             
-
-     }
   render() {
     return (
       <div>
-          <h1>Student Details</h1>
-          <button onClick={()=> this.reduceage()}>Reduce Age</button>
-          <h3>{this.state.Users}</h3>
-          {/* <h3> Name : {this.state.Users[0].name } | Age : { this.state.Users[0].age} <br/>
-          Name : {this.state.Users[1].name } | Age : { this.state.Users[1].age} <br/>
-          Name : {this.state.Users[2].name } | Age : { this.state.Users[2].age}
-           </h3> */}
-        
+        <h1>Student Details</h1>
+        <button
+          onClick={() => {
+            this.reduceage();
+          }}
+        >
+          Increase Age
+        </button>
+        {this.state.Users.map(userItem => {
+          return (
+            <h3 key={userItem.name}>
+              {userItem.name} -> {userItem.age}
+            </h3>
+          );
+        })}
       </div>
-    )
+    );
   }
 }
-export default Usermain
+export default Usermain;
