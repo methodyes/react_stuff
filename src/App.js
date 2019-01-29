@@ -18,14 +18,28 @@ import If from "./Compo1/Usingletandif/If1/If";
 import Usermain from "./Action/Usermain";
 import Desfunct from "./Compo1/Destruction/Desfunct";
 import Desclass from "./Compo1/Destruction/Desclass";
+import Butaddandminus from './Compo1/Buttons/Butaddandminus'
+import Buttonteach from './Compo1/Buttons/Buttonteach'
+import Buttonbind from './Compo1/Buttons/Buttonbind'
+import Alerthello from './Compo1/Buttons/Alerthello'
+import {Test,Test1} from './Compo1/Buttons/Test'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+      <Test></Test>
+      <Test1></Test1>
+      
+      {/* <Buttonbind></Buttonbind> */}
+      {/* // <Alerthello></Alerthello> */}
+     
+      {/* <Buttonteach></Buttonteach> */}
+      {/* <Butaddandminus></Butaddandminus> */}
+      {/* <Butadd></Butadd> */}
         {/* <Desclass></Desclass> */}
         {/* <Desfunct name="Metho" age="30"></Desfunct> */}
-        <Usermain />
+        {/* <Usermain /> */}
         {/* <If></If> */}
         {/* <Basiclet title="How to use let in reactjs"></Basiclet> */}
         {/* <Puttitlebyusingstate></Puttitlebyusingstate> */}

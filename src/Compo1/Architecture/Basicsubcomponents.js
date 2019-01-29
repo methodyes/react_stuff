@@ -2,10 +2,11 @@ import React from 'react'
 import Basicsubcomponents1 from './Basicsubcomponents1'
 
 const Basicsubcomponents = (props) => {
+  const {name,age}=props
   return (
     <div>
       <h1> About sub components instead of using always app.js</h1>
-      <h2>{props.name} {props.children}</h2>
+      <h2>{name} {props.children}</h2>
       <Basicsubcomponents1></Basicsubcomponents1>
     </div>
   )
