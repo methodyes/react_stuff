@@ -5,14 +5,14 @@ class Alerthello extends Component {
       super(props)
     
       this.state = {
-          
+          parentName : "parent"
          
       }
       this.alertmessage=this.alertmessage.bind(this)
     }
     
     alertmessage (){
-      alert ("check")
+      alert ("check" + " " + this.state.parentName)
     }
   render() {
     return (

@@ -23,23 +23,44 @@ import Buttonteach from './Compo1/Buttons/Buttonteach'
 import Buttonbind from './Compo1/Buttons/Buttonbind'
 import Alerthello from './Compo1/Buttons/Alerthello'
 import {Test,Test1} from './Compo1/Buttons/Test'
+import Counter from './Mosh/Counter'
+import List1 from './Compo1/Arrays/List1'
+import List2 from './Compo1/Arrays/List2'
+import List3 from './Compo1/Arrays/List3'
+import List4 from './Compo1/Arrays/List4'
+import List5 from './Compo1/Arrays/List5'
+
+import List6 from './Compo1/Arrays/List6'
+import Todo from './Compo1/TODO/Todo'
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-      <Test></Test>
-      <Test1></Test1>
+      {/* <Todo/> */}
+      {/* <List6/> */}
+     
+      {/* <List5/> */}
+      {/* <List4/> */}
+      {/* <List3/> */}
+      {/* <List2/> */}
+    {/* <List1/> */}
+    {/* <Counter/> */}
+      
+      {/* <Test></Test>
+      <Test1></Test1> */}
       
       {/* <Buttonbind></Buttonbind> */}
-      {/* // <Alerthello></Alerthello> */}
+      {/* <Alerthello></Alerthello> */}
      
       {/* <Buttonteach></Buttonteach> */}
       {/* <Butaddandminus></Butaddandminus> */}
       {/* <Butadd></Butadd> */}
         {/* <Desclass></Desclass> */}
         {/* <Desfunct name="Metho" age="30"></Desfunct> */}
-        {/* <Usermain /> */}
+        <Usermain />
+
         {/* <If></If> */}
         {/* <Basiclet title="How to use let in reactjs"></Basiclet> */}
         {/* <Puttitlebyusingstate></Puttitlebyusingstate> */}
